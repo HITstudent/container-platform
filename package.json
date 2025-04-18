@@ -1,0 +1,22 @@
+{
+  "name": "container-platform",
+  "version": "1.0.0",
+  "description": "Container Platform Management System",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "start:backend": "cd backend && python -m uvicorn main:app --reload",
+    "install:all": "npm install && cd frontend && npm install",
+    "build": "cd frontend && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/recharts": "^1.8.29",
+    "recharts": "^2.15.2"
+  }
+}
